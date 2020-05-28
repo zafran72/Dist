@@ -8,7 +8,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
-    <title>Dist</title>
+    <title>@yield('title')</title>
   </head>
   <body style="background: #9fed72">
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -40,16 +40,7 @@
 
     <div class="container-xl">
         <div class="container">
-            <div class="row">
-              <div class="col-sm p-5 m-5">
-                <h1 style="text-align: center">Dist.</h1>
-              </div>
-              <div class="col-sm p-5 m-5">
-                <h1 class="mb-5" style="text-align: center">Login Here</h1>
-                <button type="button" class="btn btn-dark ml-5 mr-5 mt-3">Produsen</button>
-                <button type="button" class="btn btn-dark ml-5 mt-3">Pedagang</button>
-              </div>
-            </div>
+            @yield('content')
         </div>
     </div>    
 
