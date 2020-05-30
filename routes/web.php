@@ -17,3 +17,5 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('login', 'ProdusenController@login');
+Route::get('signup', 'ProdusenController@signup');
