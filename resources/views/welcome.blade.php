@@ -9,7 +9,7 @@
         </div>
         <div class="col-sm p-5 m-5">
         <h1 class="mb-5" style="text-align: center">Login Here</h1>
-        <button type="button" class="btn btn-dark ml-5 mr-5 mt-3">Produsen</button>
+        <a href="{{ url('/login') }}" class="btn btn-dark ml-5 mr-5 mt-3">Produsen</a>
         <button type="button" class="btn btn-dark ml-5 mt-3">Pedagang</button>
         </div>
     </div>
