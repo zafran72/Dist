@@ -17,5 +17,9 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('storeProfile', function () {
+    return view('storeProfile');
+});
+
 Route::get('login', 'ProdusenController@login');
 Route::get('signup', 'ProdusenController@signup');
