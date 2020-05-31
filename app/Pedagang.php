@@ -3,8 +3,9 @@
 namespace App;
 
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Foundation\Auth\User as Authenticatable;
 
-class Pedagang extends Model
+class Pedagang extends Authenticatable
 {
     use Notifiable;
 
