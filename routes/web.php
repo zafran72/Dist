@@ -23,3 +23,11 @@ Route::get('storeProfile', function () {
 
 Route::get('login', 'ProdusenController@login');
 Route::get('signup', 'ProdusenController@signup');
+
+Route::get('total', function () {
+    return view('total');
+});
+
+Route::get('orderSuccess', function () {
+    return view('orderSuccess');
+});
