@@ -17,34 +17,20 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('createStore', function () {
-    return view('createStore');
-});
-
-Route::get('editStore', function () {
-    return view('editStore');
-});
-
 Route::get('storeProfile', function () {
     return view('storeProfile');
 });
-
-Route::get('Animal', function () {
-    return view('Animal');
-});
-
-Route::get('Store', function () {
-    return view('Store');
-});
-Route::get('login', 'ProdusenController@login');
-Route::get('signup', 'ProdusenController@signup');
 
 Route::get('animal', function () {
     return view('produsen/animal');
 });
 
-Route::get('updateStorage', function () {
-    return view('updateStorage');
+Route::get('detail', function () {
+    return view('detail');
+});
+
+Route::get('ternakku', function () {
+    return view('ternakku');
 });
 
 Route::get('/admin/login', 'AdminController@login');
@@ -54,4 +40,3 @@ Route::get('/produsen/signup', 'ProdusenController@signup');
 
 Route::get('/pedagang/login', 'PedagangController@login');
 Route::get('/pedagang/signup', 'PedagangController@signup');
-
