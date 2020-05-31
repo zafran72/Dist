@@ -29,6 +29,16 @@ Route::get('storeProfile', function () {
     return view('storeProfile');
 });
 
+Route::get('Animal', function () {
+    return view('Animal');
+});
+
+Route::get('Store', function () {
+    return view('Store');
+});
+Route::get('login', 'ProdusenController@login');
+Route::get('signup', 'ProdusenController@signup');
+
 Route::get('animal', function () {
     return view('produsen/animal');
 });
@@ -40,3 +50,4 @@ Route::get('/produsen/signup', 'ProdusenController@signup');
 
 Route::get('/pedagang/login', 'PedagangController@login');
 Route::get('/pedagang/signup', 'PedagangController@signup');
+
