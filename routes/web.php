@@ -18,11 +18,36 @@ Route::get('/', function () {
 });
 
 Route::get('storeProfile', function () {
-    return view('storeProfile');
+    return view('produsen/storeProfile');
 });
 
-Route::get('login', 'ProdusenController@login');
-Route::get('signup', 'ProdusenController@signup');
+Route::get('createStore', function () {
+    return view('createStore');
+});
+
+Route::get('editStore', function () {
+    return view('editStore');
+});
+
+Route::get('updateStorage', function () {
+    return view('updateStorage');
+});
+
+Route::get('chooseStore', function ( ) {
+    return view('chooseStore');
+});
+
+Route::get('animal', function () {
+    return view('animal');
+});
+
+Route::get('detail', function () {
+    return view('detail');
+});
+
+Route::get('ternakku', function () {
+    return view('ternakku');
+});
 
 Route::get('total', function () {
     return view('total');
@@ -31,3 +56,11 @@ Route::get('total', function () {
 Route::get('orderSuccess', function () {
     return view('orderSuccess');
 });
+
+Route::get('/admin/login', 'AdminController@login');
+
+Route::get('/produsen/login', 'ProdusenController@login');
+Route::get('/produsen/signup', 'ProdusenController@signup');
+
+Route::get('/pedagang/login', 'PedagangController@login');
+Route::get('/pedagang/signup', 'PedagangController@signup');
