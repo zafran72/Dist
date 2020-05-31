@@ -17,4 +17,14 @@ class ProdusenController extends Controller
     {
         return view('produsen/signup');
     }  
+	
+	public function update()
+    {
+        return view('produsen/updateStorage');
+    } 
+
+    public function create()
+    {
+        return view('produsen/createStore');
+    } 
 }

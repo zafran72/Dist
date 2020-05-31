@@ -43,6 +43,10 @@ Route::get('animal', function () {
     return view('produsen/animal');
 });
 
+Route::get('updateStorage', function () {
+    return view('updateStorage');
+});
+
 Route::get('/admin/login', 'AdminController@login');
 
 Route::get('/produsen/login', 'ProdusenController@login');
