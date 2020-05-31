@@ -18,27 +18,11 @@ Route::get('/', function () {
 });
 
 Route::get('storeProfile', function () {
-    return view('produsen/storeProfile');
-});
-
-Route::get('createStore', function () {
-    return view('createStore');
-});
-
-Route::get('editStore', function () {
-    return view('editStore');
-});
-
-Route::get('updateStorage', function () {
-    return view('updateStorage');
-});
-
-Route::get('chooseStore', function ( ) {
-    return view('chooseStore');
+    return view('storeProfile');
 });
 
 Route::get('animal', function () {
-    return view('animal');
+    return view('produsen/animal');
 });
 
 Route::get('detail', function () {
@@ -47,14 +31,6 @@ Route::get('detail', function () {
 
 Route::get('ternakku', function () {
     return view('ternakku');
-});
-
-Route::get('total', function () {
-    return view('total');
-});
-
-Route::get('orderSuccess', function () {
-    return view('orderSuccess');
 });
 
 Route::get('/admin/login', 'AdminController@login');
