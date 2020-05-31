@@ -5,16 +5,16 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Produsen;
 
-class ProdusenController extends Controller
+class PedagangController extends Controller
 {
 
     public function login()
     {
-        return view('produsen/login');
+        return view('pedagang/login');
     }  
 
     public function signup()
     {
-        return view('produsen/signup');
+        return view('pedagang/signup');
     }  
 }
