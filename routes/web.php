@@ -17,6 +17,14 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('createStore', function () {
+    return view('createStore');
+});
+
+Route::get('editStore', function () {
+    return view('editStore');
+});
+
 Route::get('storeProfile', function () {
     return view('storeProfile');
 });
