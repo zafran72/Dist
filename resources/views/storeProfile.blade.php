@@ -16,7 +16,7 @@
             </div>
             <div class="row justify-content-center mb-5">
                 <a href="{{ url('/edit') }}" class="btn btn-dark mr-5 pl-5 pr-5 btn-lg">Edit</a>
-                <a href="{{ url('/edit') }}" class="btn btn-dark ml-5 pl-5 pr-5 btn-lg">Update</a>
+                <a href="{{ url('/edit') }}" class="btn btn-dark ml-10 pl-5 pr-5 btn-lg">Update</a>
             </div>
         </div>
     </div>

@@ -21,5 +21,13 @@ Route::get('storeProfile', function () {
     return view('storeProfile');
 });
 
+Route::get('detail', function () {
+    return view('detail');
+});
+
+Route::get('ternakku', function () {
+    return view('ternakku');
+});
+
 Route::get('login', 'ProdusenController@login');
 Route::get('signup', 'ProdusenController@signup');
