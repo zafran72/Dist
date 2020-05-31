@@ -1,13 +1,13 @@
 @extends('main')
 
-@section('title', 'Login Dist')
+@section('title', 'Login Produsen')
 
 @section('content')
     <div class="row">
         <form class="forms bg-light col-md-5 mx-auto mt-5" method="POST" action="">
             {{ csrf_field() }}         
             <div class="form-group col-10 mt-5 mx-auto">
-                <h4 class="mx-auto" style="width:80px">Login</h4>
+                <h4 class="mx-auto" style="width:80px">Login Produsen</h4>
             </div>
             <div class="form-group col-10 mx-auto">
                 <label>Username</label>
@@ -21,7 +21,7 @@
                 <button type="submit" class="btn btn-dark btn-block" name="login">Login</button>
             </div>
             <div class="form-group col-10 mx-auto mb-5">  
-                <p>Didn't Have Account? <a href="/signup" role="button"> Sign up <a></p>                                                  
+            <p>Didn't Have Account? <a href="{{ url('/produsen/signup') }} " role="button"> Sign up <a></p>                                                   
             </div>
         </form>
     </div>

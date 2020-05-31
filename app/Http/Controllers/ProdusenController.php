@@ -10,11 +10,21 @@ class ProdusenController extends Controller
 
     public function login()
     {
-        return view('login');
+        return view('produsen/login');
     }  
 
     public function signup()
     {
-        return view('signup');
+        return view('produsen/signup');
     }  
+	
+	public function update()
+    {
+        return view('produsen/updateStorage');
+    } 
+
+    public function create()
+    {
+        return view('produsen/createStore');
+    } 
 }

@@ -4,7 +4,7 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Produsen extends Model
+class Pedagang extends Model
 {
     use Notifiable;
 
