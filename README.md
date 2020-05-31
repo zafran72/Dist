@@ -1,4 +1,4 @@
-# Vilection
+# Dist
 ---
 
 ### How to use
