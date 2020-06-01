@@ -21,6 +21,10 @@ Route::get('/produsen/details', function () {
     return view('/produsen/details');
 });
 
+Route::get('/pedagang/chooseTernak', function () {
+    return view('/pedagang/chooseTernak');
+});
+
 Route::get('/admin/login', 'AdminController@login');
 
 Route::get('/produsen/login', 'ProdusenController@login');
