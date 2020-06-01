@@ -59,6 +59,26 @@ class PedagangController extends Controller
         return view('/pedagang/chooseStore');
     }
 
+    public function chooseAnimal()
+    {
+        return view('/pedagang/chooseAnimal');
+    }
+
+    public function chooseTernak()
+    {
+        return view('/pedagang/chooseTernak');
+    }
+
+    public function total()
+    {
+        return view('/pedagang/total');
+    }
+
+    public function success()
+    {
+        return view('/pedagang/orderSuccess');
+    }
+
     public function tambahPedagang(Request $request)
     {
         DB::table('pedagang')->insert([

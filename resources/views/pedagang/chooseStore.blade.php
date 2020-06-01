@@ -9,7 +9,7 @@
         <div class="card mr-3 ml-3" style="width: 16rem;">
             <img src="../images/Ternakku.jpg" class="card-img-top" alt="...">
             <div class="card-body">
-                <a href="#" class="btn btn-dark">Ternakku</a>
+                <a href="{{ route('chooseanimal') }}" class="btn btn-dark">Ternakku</a>
                 <p class="card-text">Tungkop</p>
                 <p class="card-text">0823 xxx xxx</p>
             </div>
@@ -18,7 +18,7 @@
         <div class="card mr-3 ml-3" style="width: 16rem;">
             <img src="../images/Ternaklu.png" class="card-img-top" alt="...">
             <div class="card-body">
-            <a href="#" class="btn btn-dark">Ternaklu</a>
+            <a href="{{ route('chooseanimal') }}" class="btn btn-dark">Ternaklu</a>
                 <p class="card-text">Limpok</p>
                 <p class="card-text">0823 xxx xxx</p>
             </div>
@@ -27,7 +27,7 @@
         <div class="card mr-3 ml-3" style="width: 16rem;">
             <img src="../images/Ternakmu.png" class="card-img-top" alt="...">
             <div class="card-body">
-            <a href="#" class="btn btn-dark">Ternakmu</a>
+            <a href="{{ route('chooseanimal') }}" class="btn btn-dark">Ternakmu</a>
                 <p class="card-text">Rukoh</p>
                 <p class="card-text">0823 xxx xxx</p>
             </div>
