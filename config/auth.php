@@ -46,6 +46,12 @@ return [
             'provider' => 'users',
             'hash' => false,
         ],
+
+        'pedagang' => [
+            'driver' => 'session',
+            'provider' => 'pedagangs',
+        ],
+
     ],
 
     /*
@@ -69,6 +75,11 @@ return [
         'users' => [
             'driver' => 'eloquent',
             'model' => App\User::class,
+        ],
+
+        'pedagangs' => [
+            'driver' => 'eloquent',
+            'model' => App\Pedagang::class,
         ],
 
         // 'users' => [

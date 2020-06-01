@@ -17,50 +17,15 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('storeProfile', function () {
-    return view('produsen/storeProfile');
-});
-
-Route::get('createStore', function () {
-    return view('createStore');
-});
-
-Route::get('editStore', function () {
-    return view('editStore');
-});
-
-Route::get('updateStorage', function () {
-    return view('updateStorage');
-});
-
-Route::get('chooseStore', function ( ) {
-    return view('chooseStore');
-});
-
-Route::get('animal', function () {
-    return view('animal');
-});
-
-Route::get('detail', function () {
-    return view('detail');
-});
-
-Route::get('ternakku', function () {
-    return view('ternakku');
-});
-
-Route::get('total', function () {
-    return view('total');
-});
-
-Route::get('orderSuccess', function () {
-    return view('orderSuccess');
-});
-
 Route::get('/admin/login', 'AdminController@login');
 
 Route::get('/produsen/login', 'ProdusenController@login');
 Route::get('/produsen/signup', 'ProdusenController@signup');
 
-Route::get('/pedagang/login', 'PedagangController@login');
-Route::get('/pedagang/signup', 'PedagangController@signup');
+Route::get('/pedagang/login', 'PedagangController@login')->name('pedaganglogin');
+Route::post('/pedagang/login', 'PedagangController@doLogin')->name('pedaganglogin');
+Route::get('/pedagang/logout', 'PedagangController@destroy')->name('pedaganglogout');
+Route::get('/pedagang/signup', 'PedagangController@signup')->name('pedagangsignup');
+Route::post('/pedagang/signup', 'PedagangController@doSignUp')->name('pedagangsignup');
+Route::get('/pedagang/chooseStore', 'PedagangController@chooseStore')->name('choosestore');
+Route::post('/pedagang/tambahPedagang', 'PedagangController@tambahPedagang');
