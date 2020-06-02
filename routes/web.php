@@ -19,8 +19,15 @@ Route::get('/', function () {
 
 Route::get('/admin/login', 'AdminController@login');
 
-Route::get('/produsen/login', 'ProdusenController@login');
+Route::get('/produsen/login', 'ProdusenController@login')->name('produsenlogin');
 Route::get('/produsen/signup', 'ProdusenController@signup');
+Route::post('/produsen/signup', 'ProdusenController@singupStore');
+Route::post('/produsen/login', 'ProdusenController@loginStore')->name('produsenlogin');
+
+Route::resource('produsen/store', 'StoresController');
+Route::get('produsen/storeProfile', 'ProdusenController@profile')->name('storeprofile');
+Route::resource('produsen/storage', 'StorageController');
+Route::get('produsen/detail', 'ProdusenController@detail');
 
 Route::get('/pedagang/login', 'PedagangController@login')->name('pedaganglogin');
 Route::post('/pedagang/login', 'PedagangController@doLogin')->name('pedaganglogin');
