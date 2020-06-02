@@ -59,15 +59,17 @@ class ProdusenController extends Controller
 
     public function loginstore(Request $request)
     {
-        $request->validate([
-            'username' => 'required',
-            'password' => 'required',
+        request()->validate([
+        'username' => 'required',
+        'password' => 'required',
         ]);
+ 
+        $credentials = $request->only('username', 'password');
+        if (Auth::guard('produsen')->attempt($credentials)) {
+            // Authentication passed...
 
-        if (Auth::guard('produsen')->attempt(['username' => $request->username, 'password' => $request->password])) {
-            return redirect(route('storeprofile'));
-        } else {
-            return redirect()->back();
+            return redirect()->intended('produsen/storeProfile');
         }
+        return Redirect::to("produsen/login");
     }
 }
