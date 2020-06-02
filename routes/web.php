@@ -28,4 +28,8 @@ Route::get('/pedagang/logout', 'PedagangController@destroy')->name('pedaganglogo
 Route::get('/pedagang/signup', 'PedagangController@signup')->name('pedagangsignup');
 Route::post('/pedagang/signup', 'PedagangController@doSignUp')->name('pedagangsignup');
 Route::get('/pedagang/chooseStore', 'PedagangController@chooseStore')->name('choosestore');
+Route::get('/pedagang/chooseAnimal', 'PedagangController@chooseAnimal')->name('chooseanimal');
+Route::get('/pedagang/chooseTernak', 'PedagangController@chooseTernak')->name('chooseternak');
+Route::get('/pedagang/total', 'PedagangController@total')->name('total');
+Route::get('/pedagang/orderSuccess', 'PedagangController@success')->name('success');
 Route::post('/pedagang/tambahPedagang', 'PedagangController@tambahPedagang');
