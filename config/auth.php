@@ -52,6 +52,11 @@ return [
             'provider' => 'pedagangs',
         ],
 
+        'produsen' => [
+            'driver' => 'session',
+            'provider' => 'produsens',
+        ],
+
     ],
 
     /*
@@ -82,10 +87,10 @@ return [
             'model' => App\Pedagang::class,
         ],
 
-        // 'users' => [
-        //     'driver' => 'database',
-        //     'table' => 'users',
-        // ],
+        'produsens' => [
+            'driver' => 'eloquent',
+            'model' => App\Produsen::class,
+        ],
     ],
 
     /*
