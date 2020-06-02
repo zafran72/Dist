@@ -4,8 +4,8 @@
 
 @section('content')
     <div class="row">        
-        <form class="forms bg-light col-md-5 mx-auto mt-5" method="POST" action="">
-            {{ csrf_field() }}         
+        <form class="forms bg-light col-md-5 mx-auto mt-5" method="POST" action="{{ route('pedagangsignup') }}">
+            @csrf        
             <div class="form-group col-10 mt-4 mx-auto">
                 <h4 class="mx-auto" style="width:130px">Sign Up Pedagang</h4>
             </div>
@@ -19,7 +19,7 @@
             </div> 
             <div class="form-group col-10 mx-auto">
                 <label>Confirm Password</label>
-                <input type="password" class="form-control form-control-sm" name="password1" autocomplete="off" required>
+                <input type="password" class="form-control form-control-sm" name="password_confirmation" autocomplete="off" required>
             </div>                
             <div class="form-group col-10 mx-auto">                                    
                 <button type="submit" class="btn btn-dark btn-block" name="sign up">Sign Up</button>

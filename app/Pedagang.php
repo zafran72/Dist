@@ -7,10 +7,11 @@ use Illuminate\Foundation\Auth\User as Authenticatable;
 
 class Pedagang extends Authenticatable
 {
-    use Notifiable;
+
+    protected $table = 'pedagang';
 
     protected $fillable = [
-        'name', 'password', 'confirm_password'
+        'username', 'password'
     ];
 
     protected $hidden = [

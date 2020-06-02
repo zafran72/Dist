@@ -6,9 +6,6 @@
 <div class="bg-light col-md-10 mx-auto mt-5">
 <h1 class="text-center font-weigt-bold m-4">Ternakku</h1>
     <div class="row">
-    
-        
-    
             <div class="card mr-4 ml-4" style="width: 16rem;">
                 <img src="images/sapi1.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
