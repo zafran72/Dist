@@ -33,8 +33,8 @@
               <a class="nav-link" href="/about">About</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Contact Us</a>
-              </li>
+                <a class="nav-link" href="/Contact">Contact Us</a>
+            </li>
           </ul>
         </div>
     </nav>
