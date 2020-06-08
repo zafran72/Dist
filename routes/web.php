@@ -17,6 +17,23 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/about', function () {
+    return view('about');
+});
+
+Route::get('/produsen/details', function () {
+    return view('/produsen/details');
+});
+
+Route::get('/pedagang/chooseTernak', function () {
+    return view('/pedagang/chooseTernak');
+});
+
+
+Route::get('/Contact', function () {
+    return view('Contact');
+});
+
 Route::get('/admin/login', 'AdminController@login');
 
 Route::get('/produsen/login', 'ProdusenController@login')->name('produsenlogin');
