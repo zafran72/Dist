@@ -24,7 +24,7 @@ Route::get('/produsen/signup', 'ProdusenController@signup');
 Route::post('/produsen/signup', 'ProdusenController@singupStore');
 Route::post('/produsen/login', 'ProdusenController@loginStore')->name('produsenlogin');
 
-Route::resource('produsen/store', 'StoresController');
+Route::resource('produsen/store', 'StoresController')->name('store');
 Route::get('produsen/storeProfile', 'ProdusenController@profile')->name('storeprofile');
 Route::resource('produsen/storage', 'StorageController');
 Route::get('produsen/detail', 'ProdusenController@detail');

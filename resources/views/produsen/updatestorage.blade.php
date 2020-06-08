@@ -25,7 +25,7 @@
                 <option value="">Choose Animal</option>
                 <option value="Ayam">Ayam</option>
                 <option value="Domba">Domba</option>
-                <option value="Kambinh">Kambing</option>
+                <option value="Kambing">Kambing</option>
                 <option value="Sapi">Sapi</option>
               </select>
             </div>

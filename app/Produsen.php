@@ -11,11 +11,15 @@ class Produsen extends Authenticatable
     use Notifiable;
 
     protected $fillable = [
-        'username', 'password'
+        'username', 'email', 'telepon', 'password' 
     ];
 
     protected $hidden = [
         'password', 'remember_token'
+    ];
+
+    protected $casts = [
+        'email_verified_at' => 'datetime',
     ];
 
     public function setPasswordAttribute($password)

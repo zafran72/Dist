@@ -39,11 +39,15 @@ class PedagangController extends Controller
     {
         $request->validate([
             'username' => 'required|unique:pedagang|max:225',
-            'password' => 'required|confirmed',
+            'email' => 'required|email',
+            'telepon' => 'required',
+            'password' => 'required|min:6|confirmed'
         ]);
 
         $pedagang = Pedagang::create([
             'username' => $request->username,
+            'email' => $request->email,
+            'telepon' => $request->telepon,
             'password' => Hash::make($request->password),
         ]);
 
