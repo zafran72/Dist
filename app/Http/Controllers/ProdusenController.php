@@ -3,12 +3,12 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\DB;
-use Illuminate\Support\Facades\Hash;
-use Illuminate\Support\Facades\Auth;
 use App\Produsen;
 use App\Store;
 use App\Storage;
+use Validator,Redirect,Response;
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Hash;
 use Session;
 
 class ProdusenController extends Controller
@@ -38,23 +38,20 @@ class ProdusenController extends Controller
         return view('produsen.details', compact('datamasuk'));
     }
 
-    public function singupStore(Request $request)
+    public function singupStore()
     {
-        $request->validate([
+        $this->validate(request(), [
             'username' => 'required',
-            'password' => 'required|confirmed',
+            'email' => 'required|email',
+            'telepon' => 'required',
+            'password' => 'required|min:6|confirmed'
         ]);
-
-        $produsen = Produsen::create([
-            'username' => $request->username,
-            'password' => Hash::make($request->password),
-        ]);
-
-        if ($produsen) {
-            return redirect(route('produsenlogin'));
-        } else {
-            return redirect()->back();
-        }
+        
+        $produsen = Produsen::create(request(['username', 'email', 'telepon', 'password']));
+        
+        auth()->login($produsen);
+        
+        return redirect()->to('produsen/store');
     }
 
     public function loginstore(Request $request)
@@ -68,6 +65,10 @@ class ProdusenController extends Controller
         if (Auth::guard('produsen')->attempt($credentials)) {
             // Authentication passed...
 
+        if (Auth::guard('produsen')->attempt(['username' => $request->username, 'password' => $request->password])) {
+            return redirect()->intended('produsen/storeProfile');
+        } else {
+            return redirect()->back();
             return redirect()->intended('produsen/storeProfile');
         }
         return Redirect::to("produsen/login");
