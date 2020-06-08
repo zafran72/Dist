@@ -4,8 +4,8 @@
 
 @section('content')
     <div class="row">
-    <form class="forms bg-light col-md-5 mx-auto mt-5" method="POST" action="{{ route('pedaganglogin') }}">
-            @csrf       
+        <form class="forms bg-light col-md-5 mx-auto mt-5" method="POST" action="">
+            {{ csrf_field() }}         
             <div class="form-group col-10 mt-5 mx-auto">
                 <h4 class="mx-auto" style="width:80px">Login Admin</h4>
             </div>

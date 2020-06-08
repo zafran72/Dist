@@ -17,32 +17,15 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/about', function () {
-    return view('about');
-});
-
-Route::get('/produsen/details', function () {
-    return view('/produsen/details');
-});
-
-Route::get('/pedagang/chooseTernak', function () {
-    return view('/pedagang/chooseTernak');
-});
-
-
-Route::get('/Contact', function () {
-    return view('Contact');
-});
-
 Route::get('/admin/login', 'AdminController@login');
 
-Route::get('/produsen/login', 'ProdusenController@login')->name('produsenlogin');
+Route::get('/produsen/login', 'ProdusenController@login');
 Route::get('/produsen/signup', 'ProdusenController@signup');
 Route::post('/produsen/signup', 'ProdusenController@singupStore');
-Route::post('/produsen/login', 'ProdusenController@loginStore')->name('produsenlogin');
+Route::post('/produsen/login', 'ProdusenController@loginStore');
 
-Route::resource('produsen/store', 'StoresController')->name('store');
-Route::get('produsen/storeProfile', 'ProdusenController@profile')->name('storeprofile');
+Route::resource('produsen/store', 'StoresController');
+Route::get('produsen/storeProfile', 'ProdusenController@profile');
 Route::resource('produsen/storage', 'StorageController');
 Route::get('produsen/detail', 'ProdusenController@detail');
 
@@ -57,3 +40,8 @@ Route::get('/pedagang/chooseTernak', 'PedagangController@chooseTernak')->name('c
 Route::get('/pedagang/total', 'PedagangController@total')->name('total');
 Route::get('/pedagang/orderSuccess', 'PedagangController@success')->name('success');
 Route::post('/pedagang/tambahPedagang', 'PedagangController@tambahPedagang');
+Auth::routes();
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
