@@ -17,6 +17,9 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/Contact', function () {
+    return view('Contact');
+});
 Route::get('/admin/login', 'AdminController@login');
 
 Route::get('/produsen/login', 'ProdusenController@login')->name('produsenlogin');
