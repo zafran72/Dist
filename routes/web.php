@@ -30,8 +30,8 @@ Route::get('/pedagang/chooseTernak', function () {
 });
 
 
-Route::get('/Contact', function () {
-    return view('Contact');
+Route::get('/contact', function () {
+    return view('contact');
 });
 
 Route::get('/admin/login', 'AdminController@login');
