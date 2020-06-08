@@ -11,6 +11,10 @@
                 <div class="card-body">
                     <p class="card-text">3 age</p>
                     <p class="card-text">110 kg</p>
+
+                    <p class="card-text">Rp.16.000.000</p>
+                    <a href="#" class="btn btn-dark">Select</a>
+
                     <p class="card-text">Rp.16.0000.0000</p>
                     <a href="{{ route('total') }}" class="btn btn-dark">Select</a>
                 </div>
@@ -21,6 +25,10 @@
                 <div class="card-body">
                     <p class="card-text">5 age</p>
                     <p class="card-text">150 kg</p>
+
+                    <p class="card-text">Rp.19.000.000</p>
+                    <a href="#" class="btn btn-dark">Select</a>
+
                     <p class="card-text">Rp.19.0000.0000</p>
                     <a href="{{ route('total') }}" class="btn btn-dark">Select</a>
                 </div>
@@ -31,6 +39,10 @@
                 <div class="card-body">
                     <p class="card-text">4 age</p>
                     <p class="card-text">120 kg</p>
+
+                    <p class="card-text">Rp. 18.000.000</p>
+                    <a href="#" class="btn btn-dark">Select</a>
+
                     <p class="card-text">Rp. 18.0000.0000</p>
                     <a href="{{ route('total') }}" class="btn btn-dark">Select</a>
                 </div>
