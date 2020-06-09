@@ -33,6 +33,14 @@ Route::get('/contact', function () {
     return view('contact');
 });
 
+Route::get('/history', function () {
+    return view('history');
+});
+
+Route::get('/emptyChart', function () {
+    return view('emptyChart');
+});
+
 Route::get('/admin/login', 'AdminController@login');
 
 Route::get('/produsen/login', 'ProdusenController@login');
