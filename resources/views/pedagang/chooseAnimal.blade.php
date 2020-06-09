@@ -6,26 +6,17 @@
 <div class="bg-light col-md-10 mx-auto mt-5">
 <h1 class="text-center font-weigt-bold m-4">Choose Animal</h1>
     <div class="row">
-        <div class="card mr-3 ml-3" style="width: 16rem;">
-            <img src="../images/sapi.png" class="card-img-top" alt="...">
-            <div class="card-body">
-                <a href="{{ route('chooseternak') }}" class="btn btn-dark">Sapi</a>
+        @foreach ($datamasuk as $data)
+            <div class="card mr-3 ml-3" style="width: 16rem;">
+                <img src="{{ asset('assets/img/') }}/{{ $data->image }}" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <a href="{{ route('total') }}" class="btn btn-dark">{{ $data->animal }}</a>
+                    <p class="card-text" name="price"> {{ $data->price }}</p>
+                    <p class="card-text" name="weight"> {{ $data->weight }}</p>
+                        <p class="card-text" name="age"> {{ $data->age }}</p>
+                </div>
             </div>
-        </div>
-
-        <div class="card mr-3 ml-3" style="width: 16rem;">
-            <img src="../images/Ayam.png" class="card-img-top" alt="...">
-            <div class="card-body">
-                <a href="{{ route('chooseternak') }" class="btn btn-dark">Ayam</a>
-            </div>
-        </div>
-
-        <div class="card mr-3 ml-3" style="width: 16rem;">
-            <img src="../images/kambing.png" class="card-img-top" alt="...">
-            <div class="card-body">
-                <a href="{{ route('chooseternak') }" class="btn btn-dark">Kambing</a>
-            </div>
-        </div>
+        @endforeach
     </div>
 </div>
 
