@@ -9,7 +9,7 @@
         <img src="assets/img/empty-cart.png" class="rounded mx-auto d-block mb-4 mt-5" alt="Empty Cart">
 
         <div class="mx-auto mt-5" style="width:85px">
-            <a class="btn btn-dark btn-lg" href="#" role="button">Order</a>
+            <a class="btn btn-dark btn-lg" href="/pedagang/chooseStore" role="button">Order</a>
         </div>
     </div> 
 @endsection
