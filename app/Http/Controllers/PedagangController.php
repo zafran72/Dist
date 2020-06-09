@@ -7,6 +7,8 @@ use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Auth;
 use App\Pedagang;
+use App\Store;
+use App\Storage;
 
 class PedagangController extends Controller
 {
@@ -60,12 +62,16 @@ class PedagangController extends Controller
 
     public function chooseStore()
     {
-        return view('/pedagang/chooseStore');
+        $datamasuk = Store::all();
+
+        return view('/pedagang/chooseStore', compact('datamasuk'));
     }
 
     public function chooseAnimal()
-    {
-        return view('/pedagang/chooseAnimal');
+    {   
+        $datamasuk = Storage::all();
+
+        return view('/pedagang/chooseAnimal', compact('datamasuk'));
     }
 
     public function chooseTernak()

@@ -8,7 +8,7 @@
 <div class="form-group row mx-auto" style="width:230px">
     <div class="input-group mb-2 mr-sm-2">
             <div class="input-group-prepend">
-            <div class="input-group-text" style="width:70px">Sapi</div>
+            <div class="input-group-text" style="width:70px">Ayam</div>
             </div>
             <input type="text" class="form-control col-sm-8" disabled placeholder="1 ekor">
         </div>
@@ -16,7 +16,7 @@
             <div class="input-group-prepend">
             <div class="input-group-text" style="width:70px">Harga</div>
             </div>
-            <input type="text" class="form-control col-sm-8" disabled placeholder="Rp 18.000.000,-">
+            <input type="text" class="form-control col-sm-8" disabled placeholder="Rp 2.000.000,-">
         </div>
     </div>
     <hr>
@@ -26,7 +26,7 @@
             <div class="input-group-prepend">
             <div class="input-group-text" style="width:70px">Total</div>
             </div>
-            <input type="text" class="form-control col-sm-8" disabled placeholder="Rp 18.000.000,-">
+            <input type="text" class="form-control col-sm-8" disabled placeholder="Rp 2.000.000,-">
         </div>
     </div>
   <div class="mx-auto" style="width:85px">
