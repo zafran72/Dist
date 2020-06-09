@@ -16,6 +16,20 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+Route::get('/about', function () {
+    return view('about');
+});
+
+Route::get('/notifikasi', function () {
+    return view('notif');
+});
+Route::get('/notifikasi/rincian', function () {
+    return view('rincian');
+});
+
+Route::get('/contact', function () {
+    return view('contact');
+});
 
 Route::get('/admin/login', 'AdminController@login');
 
