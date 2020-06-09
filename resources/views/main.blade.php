@@ -23,16 +23,16 @@
             <a class="nav-link" href="{{ url('/') }}">Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Notifikasi</a>
+              <a class="nav-link" href="/notifikasi">Notifikasi</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="#">History</a>
               </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">About</a>
+              <a class="nav-link" href="/about">About</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Contact Us</a>
+                <a class="nav-link" href="/contact">Contact Us</a>
             </li>
           </ul>
         </div>
