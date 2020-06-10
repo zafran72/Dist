@@ -9,8 +9,8 @@
             <div class="row justify-content-center mb-5 ">
                 <div class="card h">
                     @foreach($datamasuk as $data)
-                        <img class="bd-placeholder-img card-img-top" width="200px" height="200px" name="image" src="@if($data->image == null) {{ asset('assets\img\storeProfile.png') }}
-                                    @else {{ asset('assets/img/') }}/{{ $data->image }} @endif" alt=" {{ $data->username}}'s picture">
+                        <img class="bd-placeholder-img card-img-top" style="width:200px;height:200px;" name="image" src="@if($data->image == null) {{ asset('assets\img\storeProfile.png') }}
+                                    @else {{ asset('images') }}/{{ $data->image }} @endif" alt=" {{ $data->username}}'s picture">
                         <div class="card-body d-flex flex-column">
                             <h5 class="card-title" name="store_name"> {{ $data->store_name }}</h5>
                             <h5 class="card-text" name="address">{{ $data->address }}</h5>
