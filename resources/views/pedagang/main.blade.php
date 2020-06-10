@@ -35,6 +35,11 @@
                 <a class="nav-link" href="/contact">Contact Us</a>
             </li>
           </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li class="nav-item">
+                <a class="nav-link" href="/">Logout</a>
+            </li>
+          </ul>
         </div>
     </nav>
 
