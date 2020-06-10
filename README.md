@@ -15,6 +15,10 @@ Run Composer install
 ```console
 foo@bar:~/Dist$ composer install
 ```
+Set package laravel/ui
+```console
+foo@bar:~/Dist$ composer require laravel/ui --dev
+```
 Create new .env file with example .env.example
 ```console
 foo@bar:~$ copy .env.example .env
@@ -22,6 +26,10 @@ foo@bar:~$ copy .env.example .env
 Generate new key for Laravel Application
 ```console
 foo@bar:~$ php artisan key:generate
+```
+Run migration
+```console
+foo@bar:~$ php artisan migrate
 ```
 
 Run the laravel app
