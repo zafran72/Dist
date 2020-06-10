@@ -21,18 +21,18 @@ foo@bar:~/Dist$ composer require laravel/ui --dev
 ```
 Create new .env file with example .env.example
 ```console
-foo@bar:~$ copy .env.example .env
+foo@bar:~/Dist$ copy .env.example .env
 ```
 Generate new key for Laravel Application
 ```console
-foo@bar:~$ php artisan key:generate
+foo@bar:~/Dist$ php artisan key:generate
 ```
 Run migration
 ```console
-foo@bar:~$ php artisan migrate
+foo@bar:~/Dist$ php artisan migrate
 ```
 
 Run the laravel app
 ```console
-foo@bar:~$ php artisan serve
+foo@bar:~/Dist$ php artisan serve
 ```
