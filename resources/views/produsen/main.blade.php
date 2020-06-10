@@ -20,13 +20,13 @@
         <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
           <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
             <li class="nav-item active">
-            <a class="nav-link" href="{{ url('/') }}">Home <span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="{{ url('/produsen/storeProfile') }}">Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/produsen/login">Produsen</a>
+              <a class="nav-link" href="/notifikasi">Notifikasi</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="/pedagang/login">Pedagang</a>
+                <a class="nav-link" href="/history">History</a>
               </li>
             <li class="nav-item">
               <a class="nav-link" href="/about">About</a>

@@ -1,4 +1,4 @@
-@extends('main')
+@extends('produsen/main')
 
 @section('title', 'Edit Store | Dist')
 

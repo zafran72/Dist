@@ -1,4 +1,4 @@
-@extends('main')
+@extends('pedagang/main')
 
 @section('title', 'Ternakku')
 
