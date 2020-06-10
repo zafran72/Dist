@@ -8,7 +8,7 @@
     <div class="row">
         @foreach ($datamasuk as $data)
             <div class="card mr-3 ml-3" style="width: 16rem;">
-                <img src="{{ asset('assets/img/') }}/{{ $data->image }}" class="card-img-top" alt="...">
+                <img src="{{ asset('images') }}/{{ $data->image }}" class="card-img-top" alt="...">
                 <div class="card-body">
                     <a href="{{ route('total') }}" class="btn btn-dark">{{ $data->animal }}</a>
                     <p class="card-text" name="price"> {{ $data->price }}</p>
