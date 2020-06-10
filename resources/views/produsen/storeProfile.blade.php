@@ -1,4 +1,4 @@
-@extends('main')
+@extends('produsen/main')
 
 @section('title', 'Store Profile')
 

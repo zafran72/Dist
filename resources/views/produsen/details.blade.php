@@ -1,4 +1,4 @@
-@extends('main')
+@extends('produsen/main')
 
 @section('title', 'Detail')
 
@@ -11,7 +11,7 @@
             @foreach($datamasuk as $data)
                 <div class="card mr-4 ml-4" style="width: 15rem;">  
                     <img class="bd-placeholder-img card-img-top" name="image" src="@if($data->image == null) {{ asset('assets\img\sapi.png') }}
-                                        @else {{ asset('assets/img/') }}/{{ $data->image }} @endif" alt=" {{ $data->username}}'s picture">
+                                        @else {{ asset('images') }}/{{ $data->image }} @endif" alt=" {{ $data->username}}'s picture">
                     <div class="card-body">
                         <p class="card-text" name="age"> {{ $data->age }}</p>
                         <p class="card-text" name="weight"> {{ $data->weight }}</p>
